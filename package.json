@@ -1,0 +1,16 @@
+{
+  "name": "ableton",
+  "version": "1.0.0",
+  "description": "\"Recreacion de landing page del sitio de Ableton\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eric hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "sass": "^1.69.7"
+  }
+}
