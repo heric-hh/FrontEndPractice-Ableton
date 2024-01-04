@@ -332,34 +332,33 @@ template {
   display: none;
 }
 
-.hero-header {
+.nav-cont {
   display: flex;
   flex-direction: column;
 }
-.hero-header__main-nav__list, .hero-header__sub-nav__list {
-  border: 1px solid magenta;
+.nav-cont__main-nav__list, .nav-cont__sub-nav__list {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 1.9rem 3rem;
   font-weight: bold;
+  gap: 1rem;
 }
-.hero-header__main-nav__list .highlight, .hero-header__sub-nav__list .highlight {
+.nav-cont__main-nav__list {
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.nav-cont__main-nav__list li {
+  text-align: center;
+  flex-basis: 7rem;
+  padding: 2rem 0;
+}
+.nav-cont__sub-nav__list {
+  padding: 1.8rem;
+}
+.nav-cont__sub-nav__list li {
+  flex-basis: 4rem;
+}
+.nav-cont__sub-nav__list .highlight {
   color: #ff764d;
-}
-.hero-header__main-nav__list li {
-  font-size: 1.6rem;
-  flex-basis: 8rem;
-}
-.hero-header__main-nav__list li:nth-last-child(-n+2) {
-  flex-basis: 15rem;
-}
-.hero-header__main-nav__list li:nth-last-child(2) {
-  margin-left: auto;
-  color: #0000ff;
-}
-.hero-header__sub-nav__list li {
-  font-size: 1.3rem;
-  flex-basis: 6rem;
 }
