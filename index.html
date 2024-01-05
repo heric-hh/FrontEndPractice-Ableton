@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/app.css">
+    <script src="build/js/app.js" defer></script>
     <title>Ableton - Frontend Practice</title>
 </head>
 <body>
     <header class="nav-cont">
+        <!-- Navegacion mobile-->
         <nav class="nav-cont__main-nav">
             <ul class="nav-cont__main-nav__list">
                 <li><img src="build/img/logo.webp" alt="logo"></li>
-                <li><span>Menu &#9660;</span></li>
+                <li><span class="btn-menu">Menu &#9660;</span></li>
             </ul>
         </nav>
 
@@ -22,6 +24,45 @@
                 <li><span>Apprenticeships</span></li>
             </ul>
         </nav>
+
+        <!-- blue section -->
+        <section class="nav-menu">
+            <ul class="nav-menu --open__list">
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Push</a></li>
+                <li><a href="#">Note</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Packs</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Try Live For Free</a></li>
+                <li><a href="#" class="mini-font">Log in or register</a></li>
+                <li><a href="#">More on Ableton.com</a></li>
+                <li><a href="#" class="mini-font">Blog</a></li>
+                <li><a href="#" class="mini-font">Ableton for the classroom</a></li>
+                <li> <a href="#" class="mini-font"> Ableton for college and Universities </a></li>
+                <li> <a href="#" class="mini-font">Certified Training</a></li>
+                <li> <a href="#" class="mini-font highlight"> About Ableton</a></li>
+                <li> <a href="#" class="mini-font"> Jobs </a></li>
+                <li> <a href="#" class="mini-font">Apprenticeships</a> </li>
+
+                <div class="nav-menu__more">
+                    <p>More from Ableton:</p>
+                    <div class="nav-menu__more__two-card">
+                        <div class="left-card mini-font">
+                            <a href="#">Loop</a>
+                            <a href="#">Watch Talks, Performances and Features for Music Makers</a>
+                        </div>
+
+                        <div class="right-column mini-font">
+                            <a href="#"> Learning Music </a>
+                            <a href="#"> Learn the fundamentals making music</a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </section> <!-- ends blue section -->
+
     </header>
 </body>
 </html>
