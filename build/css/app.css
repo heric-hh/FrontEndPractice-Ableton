@@ -24,6 +24,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -349,14 +354,48 @@ template {
   gap: 1rem;
 }
 .nav-cont__main-nav__list {
-  font-size: 1.8rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.nav-cont__main-nav__list li {
   text-align: center;
-  flex-basis: 7rem;
-  padding: 2rem 0;
-  cursor: pointer;
+  font-size: 1.8rem;
+}
+@media (min-width: 300px) {
+  .nav-cont__main-nav__list li {
+    cursor: pointer;
+    flex-basis: 7rem;
+    padding: 2rem 0;
+  }
+  .nav-cont__main-nav__list .li-desk {
+    display: none;
+  }
+  .nav-cont__main-nav__list .li-desk .highlight {
+    color: #ff764d;
+  }
+  .nav-cont__main-nav__list .li-desk .highlightBlue {
+    color: #0000ff;
+  }
+}
+@media (min-width: 992px) {
+  .nav-cont__main-nav__list .btn-menu {
+    display: none;
+  }
+  .nav-cont__main-nav__list .li-desk {
+    display: block;
+    flex-basis: 6rem;
+    padding: 1rem 0;
+  }
+  .nav-cont__main-nav__list .li-desk:nth-last-child(2) {
+    font-size: 1.6rem;
+    margin-left: auto;
+    flex-basis: 15rem;
+  }
+  .nav-cont__main-nav__list .li-desk:nth-last-child(1) {
+    font-size: 1.5rem;
+    margin-right: 4rem;
+    flex-basis: 15rem;
+  }
+  .nav-cont__main-nav__list .li-desk.btn-more.--enabled {
+    content: "More -";
+  }
 }
 .nav-cont__main-nav__list.--open li {
   color: white;
@@ -366,6 +405,7 @@ template {
 }
 .nav-cont__sub-nav__list {
   padding: 1.8rem;
+  font-size: 1.2rem;
 }
 .nav-cont__sub-nav__list li {
   flex-basis: 4rem;
@@ -421,4 +461,49 @@ a .highlight {
 
 .nav-menu {
   display: none;
+}
+
+.more-menu {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .more-menu.--open {
+    display: block;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+  }
+  .more-menu.--open div > h3 {
+    font-size: 2.8rem;
+    padding-top: 3rem;
+  }
+}
+
+.more-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.more-list a {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-right: 3rem;
+}
+.more-list .highlight {
+  color: #ff764d;
+}
+
+.more-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.more-grid h4 {
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+.more-grid p {
+  font-size: 1.5rem;
 }
