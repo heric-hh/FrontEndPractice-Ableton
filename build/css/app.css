@@ -403,6 +403,9 @@ template {
 .nav-cont__main-nav__list.--open li img {
   filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(294deg) brightness(104%) contrast(101%);
 }
+.nav-cont__sub-nav {
+  padding: 0.8rem 0;
+}
 .nav-cont__sub-nav__list {
   padding: 1.8rem;
   font-size: 1.2rem;
@@ -506,4 +509,83 @@ a .highlight {
 }
 .more-grid p {
   font-size: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+
+.flex-container {
+  gap: 4rem;
+}
+.flex-container__img-wrapper {
+  background-image: url("../../src/img/logo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 60%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container__img-wrapper__logo {
+  text-align: center;
+}
+.flex-container__img-wrapper svg {
+  width: 80%;
+  margin-left: 1rem;
+}
+@media (min-width: 992px) {
+  .flex-container__img-wrapper {
+    background-position: 50% 0%;
+    min-height: 100vh;
+  }
+  .flex-container__img-wrapper svg {
+    width: 90%;
+  }
+}
+
+.flex-container__section h4 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.flex-container__section p {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  margin: 2rem 0;
+  line-height: 2rem;
+}
+.flex-container__section .blue-text {
+  color: #0000ff;
+}
+
+.flex-container__collage {
+  position: relative;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container__collage__lemonade {
+  border: 1px solid #fbffa7;
+  background-color: #fbffa7;
+  position: absolute;
+  right: 0;
+  width: 60vw;
+  height: 60vw;
+  z-index: 1;
+}
+.flex-container__collage__row {
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container__collage__row img {
+  width: 90%;
 }

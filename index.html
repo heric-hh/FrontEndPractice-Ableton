@@ -1,119 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/app.css" />
     <script src="build/js/app.js" defer></script>
     <title>Ableton - Frontend Practice</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="nav-cont">
-        <nav class="nav-cont__main-nav">
-            <ul class="nav-cont__main-nav__list">
-                <li><img src="build/img/logo.webp" alt="logo"></li>
-                <li class="btn-menu"><span>Menu &#9660;</span></li>
-                <li class="li-desk"><a href="#">Live</a></li>
-                <li class="li-desk"><a href="#">Push</a></li>
-                <li class="li-desk"><a href="#">Note</a></li>
-                <li class="li-desk"><a href="#">Link</a></li>
-                <li class="li-desk"><a href="#">Shop</a></li>
-                <li class="li-desk"><a href="#">Packs</a></li>
-                <li class="li-desk"><a href="#">Help</a></li>
-                <li class="li-desk btn-more"><a href="#" class="highlight">More +</a></li>
-                <li class="li-desk"><a href="#" class="highlightBlue">Try Live for Free</a></li>
-                <li class="li-desk"><a href="#">Log in or register</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-cont__main-nav">
+        <ul class="nav-cont__main-nav__list">
+          <li><img src="build/img/logo.webp" alt="logo" /></li>
+          <li class="btn-menu"><span>Menu &#9660;</span></li>
+          <li class="li-desk"><a href="#">Live</a></li>
+          <li class="li-desk"><a href="#">Push</a></li>
+          <li class="li-desk"><a href="#">Note</a></li>
+          <li class="li-desk"><a href="#">Link</a></li>
+          <li class="li-desk"><a href="#">Shop</a></li>
+          <li class="li-desk"><a href="#">Packs</a></li>
+          <li class="li-desk"><a href="#">Help</a></li>
+          <li class="li-desk btn-more">
+            <a href="#" class="highlight">More +</a>
+          </li>
+          <li class="li-desk">
+            <a href="#" class="highlightBlue">Try Live for Free</a>
+          </li>
+          <li class="li-desk"><a href="#">Log in or register</a></li>
+        </ul>
+      </nav>
 
-        <!-- More Menu -->
-        <section class="more-menu">
-            <div class="more-menu__top-container">
-                <h3>More on Ableton.com:</h3>
-                <div class="more-list">
-                    <a href="#">Blog</a>
-                    <a href="#">Ableton for the Classroom</a>
-                    <a href="#">Ableton for Colleges and Universities</a>
-                    <a href="#">Certified Training</a>
-                    <a href="#" class="highlight">About Ableton</a>
-                    <a href="#">Jobs</a>
-                    <a href="#">Apprenticeships</a>
-                </div>
+      <!-- More Menu -->
+      <section class="more-menu">
+        <div class="more-menu__top-container">
+          <h3>More on Ableton.com:</h3>
+          <div class="more-list">
+            <a href="#">Blog</a>
+            <a href="#">Ableton for the Classroom</a>
+            <a href="#">Ableton for Colleges and Universities</a>
+            <a href="#">Certified Training</a>
+            <a href="#" class="highlight">About Ableton</a>
+            <a href="#">Jobs</a>
+            <a href="#">Apprenticeships</a>
+          </div>
+        </div>
+
+        <div class="more-menu__bottom-container">
+          <h3>More from Ableton:</h3>
+          <div class="more-grid">
+            <section class="section-grid">
+              <h4>Loop</h4>
+              <p>
+                Watch Talks, Performances and Features from Ableton's Summit for
+                Music Makers.
+              </p>
+            </section>
+
+            <section class="section-grid">
+              <h4>Learning Music</h4>
+              <p>
+                Learn the fundamentals of music making right in your browser.
+              </p>
+            </section>
+
+            <section class="section-grid">
+              <h4>Learning Synths</h4>
+              <p>
+                Get started with synthesis using a web-based synth and
+                accompanying lessons.
+              </p>
+            </section>
+
+            <section class="section-grid">
+              <h4>Making Music</h4>
+              <p>
+                Some tips from 74 Creative Strategies for Electronic Producers.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <nav class="nav-cont__sub-nav">
+        <ul class="nav-cont__sub-nav__list">
+          <li><span class="highlight">About</span></li>
+          <li><span>Jobs</span></li>
+          <li><span>Apprenticeships</span></li>
+        </ul>
+      </nav>
+
+      <!-- blue section -->
+      <section class="nav-menu">
+        <ul class="nav-menu --open__list">
+          <li><a href="#">Live</a></li>
+          <li><a href="#">Push</a></li>
+          <li><a href="#">Note</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Packs</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Try Live For Free</a></li>
+          <li><a href="#" class="mini-font">Log in or register</a></li>
+          <li><a href="#">More on Ableton.com</a></li>
+          <li><a href="#" class="mini-font">Blog</a></li>
+          <li><a href="#" class="mini-font">Ableton for the classroom</a></li>
+          <li>
+            <a href="#" class="mini-font">
+              Ableton for college and Universities
+            </a>
+          </li>
+          <li><a href="#" class="mini-font">Certified Training</a></li>
+          <li><a href="#" class="mini-font highlight"> About Ableton</a></li>
+          <li><a href="#" class="mini-font"> Jobs </a></li>
+          <li><a href="#" class="mini-font">Apprenticeships</a></li>
+
+          <div class="nav-menu__more">
+            <p>More from Ableton:</p>
+            <div class="nav-menu__more__two-card">
+              <div class="left-card mini-font">
+                <a href="#">Loop</a>
+                <a href="#"
+                  >Watch Talks, Performances and Features for Music Makers</a
+                >
+              </div>
+
+              <div class="right-column mini-font">
+                <a href="#"> Learning Music </a>
+                <a href="#"> Learn the fundamentals making music</a>
+              </div>
             </div>
-
-            <div class="more-menu__bottom-container">
-                <h3>More from Ableton:</h3>
-                <div class="more-grid">
-                    <section class="section-grid">
-                        <h4>Loop</h4>
-                        <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers.</p>
-                    </section>
-
-                    <section class="section-grid">
-                        <h4>Learning Music</h4>
-                        <p>Learn the fundamentals of music making right in your browser.</p>
-                    </section>
-
-                    <section class="section-grid">
-                        <h4>Learning Synths</h4>
-                        <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
-                    </section>
-
-                    <section class="section-grid">
-                        <h4>Making Music</h4>
-                        <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <nav class="nav-cont__sub-nav">
-            <ul class="nav-cont__sub-nav__list">
-                <li><span class="highlight">About</span></li>
-                <li><span>Jobs</span></li>
-                <li><span>Apprenticeships</span></li>
-            </ul>
-        </nav>
-        
-        <!-- blue section -->
-        <section class="nav-menu">
-            <ul class="nav-menu --open__list">
-                <li><a href="#">Live</a></li>
-                <li><a href="#">Push</a></li>
-                <li><a href="#">Note</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Packs</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Try Live For Free</a></li>
-                <li><a href="#" class="mini-font">Log in or register</a></li>
-                <li><a href="#">More on Ableton.com</a></li>
-                <li><a href="#" class="mini-font">Blog</a></li>
-                <li><a href="#" class="mini-font">Ableton for the classroom</a></li>
-                <li> <a href="#" class="mini-font"> Ableton for college and Universities </a></li>
-                <li> <a href="#" class="mini-font">Certified Training</a></li>
-                <li> <a href="#" class="mini-font highlight"> About Ableton</a></li>
-                <li> <a href="#" class="mini-font"> Jobs </a></li>
-                <li> <a href="#" class="mini-font">Apprenticeships</a> </li>
-
-                <div class="nav-menu__more">
-                    <p>More from Ableton:</p>
-                    <div class="nav-menu__more__two-card">
-                        <div class="left-card mini-font">
-                            <a href="#">Loop</a>
-                            <a href="#">Watch Talks, Performances and Features for Music Makers</a>
-                        </div>
-
-                        <div class="right-column mini-font">
-                            <a href="#"> Learning Music </a>
-                            <a href="#"> Learn the fundamentals making music</a>
-                        </div>
-                    </div>
-                </div>
-            </ul>
-        </section> <!-- ends blue section -->
-        
-        
+          </div>
+        </ul>
+      </section>
+      <!-- ends blue section -->
     </header>
-</body>
+
+    <div class="flex-container">
+      <div class="flex-container__img-wrapper">
+        <div class="flex-container__img-wrapper__logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            width="1090px"
+            height="221px"
+            version="1.1"
+            style="
+              shape-rendering: geometricPrecision;
+              text-rendering: geometricPrecision;
+              image-rendering: optimizeQuality;
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+            "
+            viewBox="0 0 557.83 113.35"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+          >
+            <defs>
+              <font
+                id="FontID0"
+                horiz-adv-x="721"
+                font-variant="normal"
+                style="fill-rule: nonzero"
+                font-weight="700"
+              >
+                <font-face font-family="Helvetica">
+                  <font-face-src>
+                    <font-face-name name="Helvetica‭ ‬עבה" />
+                  </font-face-src>
+                </font-face>
+                <missing-glyph><path d="M0 0z" /></missing-glyph>
+                <glyph
+                  unicode="A"
+                  horiz-adv-x="721"
+                  d="M272.159 271.994l183.996 0 -90.6633 283.328 -93.3325 -283.328zm10.1691 447.99l169.996 0 253.66 -719.984 -162.996 0 -47.3336 147.997 -264.325 0 -48.8335 -147.997 -156.662 0 256.494 719.984z"
+                />
+                <glyph
+                  unicode="b"
+                  horiz-adv-x="613"
+                  d="M353.827 543.988c70.4984,0 125.663,-25.1648 165.496,-75.6636 39.8298,-50.4989 59.664,-115.497 59.664,-195.33 0,-82.6635 -19.6649,-151.162 -58.9987,-205.495 -39.1645,-54.3334 -93.9979,-81.4982 -164.331,-81.4982 -44.3297,0 -79.8289,8.83445 -106.663,26.6648 -15.9996,10.4998 -33.3339,28.834 -51.9988,55.168l0 -67.8331 -136.997 0 0 718.984 138.997 0 0 -256.329c17.665,24.8341 37.1645,43.8337 58.4987,56.8334 25.1648,16.3343 57.3334,24.4994 96.3325,24.4994zm-35.1685 -441.99c36.1685,0 64.1678,14.3343 84.3327,43.1644 19.9995,28.834 29.9993,66.6678 29.9993,113.667 0,37.4992 -4.99989,68.6638 -14.8343,93.1633 -18.6649,46.6643 -53.1642,69.9984 -103.498,69.9984 -50.8296,0 -85.8288,-22.8341 -104.828,-68.4985 -9.83442,-24.1648 -14.8343,-55.6641 -14.8343,-94.1632 0,-45.3336 10.1651,-82.8328 30.4993,-112.667 20.3342,-29.83 51.4988,-44.6643 93.1633,-44.6643z"
+                />
+                <glyph
+                  unicode="e"
+                  horiz-adv-x="580"
+                  d="M285.328 430.99c-35.8338,0 -63.4986,-9.83442 -83.1674,-29.6647 -19.6649,-19.6688 -32.1646,-46.499 -37.1645,-80.3328l239.995 0c-2.49994,35.9992 -14.8343,63.3332 -37.1645,81.9981 -22.1688,18.6649 -49.6682,27.9994 -82.4981,27.9994zm0.83069 115.997c46.3336,0 87.998,-8.33446 124.997,-24.8341 37.1685,-16.665 67.6678,-42.8297 91.8326,-78.6636 21.8342,-31.6646 35.9992,-68.3331 42.3337,-109.998 3.83062,-24.3341 5.33059,-59.4987 4.66525,-105.498l-387.991 0c2.16531,-53.6641 20.6649,-91.3326 55.6641,-112.832 21.1688,-13.4997 46.6682,-20.1649 76.6676,-20.1649 31.6646,0 57.3294,8.16517 77.1636,24.3341 10.8344,8.83051 20.3342,20.9995 28.6647,36.6645l142.831 0c-3.66527,-31.6646 -20.9995,-63.6639 -51.4988,-96.3325 -47.6643,-51.8295 -114.332,-77.6636 -199.995,-77.6636 -70.833,0 -133.332,21.8342 -187.33,65.4985 -54.1641,43.6644 -81.1635,114.832 -81.1635,213.33 0,92.3286 24.3341,162.996 73.1637,212.326 48.8335,49.1682 112.167,73.833 189.996,73.833z"
+                />
+                <glyph
+                  unicode="l"
+                  horiz-adv-x="277"
+                  d="M206.995 0l-138.997 0 0 718.984 138.997 0 0 -718.984z"
+                />
+                <glyph
+                  unicode="n"
+                  horiz-adv-x="609"
+                  d="M360.157 544.988c54.8334,0 99.667,-14.4997 134.497,-43.3337 34.8339,-28.9993 52.3335,-76.6636 52.3335,-143.497l0 -358.157 -142.997 0 0 323.493c0,27.9994 -3.66527,49.4989 -11.1651,64.4985 -13.4997,27.334 -39.4991,40.9991 -77.6675,40.9991 -46.8297,0 -79.1636,-19.9995 -96.4978,-59.9986 -9.16515,-21.1649 -13.665,-48.1643 -13.665,-80.9982l0 -287.993 -138.997 0 0 530.988 134.997 0 0 -77.6636c17.8342,27.4994 34.6646,47.3296 50.6642,59.3294 28.4994,21.4995 64.6678,32.3339 108.498,32.3339z"
+                />
+                <glyph
+                  unicode="o"
+                  horiz-adv-x="610"
+                  d="M303.828 97.9978c40.4991,0 71.6637,14.4997 93.4979,43.3337 21.8302,28.9993 32.6646,70.1638 32.6646,123.497 0,53.1642 -10.8344,94.3286 -32.6646,122.997 -21.8342,28.8301 -52.9988,43.1644 -93.4979,43.1644 -40.6684,0 -71.9984,-14.3343 -93.9979,-43.1644 -21.8342,-28.6686 -32.8339,-69.8331 -32.8339,-122.997 0,-53.3334 10.9998,-94.4979 32.8339,-123.497 21.9995,-28.834 53.3295,-43.3337 93.9979,-43.3337zm272.159 167.331c0,-77.9982 -22.4995,-144.831 -67.3331,-200.165 -44.999,-55.4987 -113.163,-83.1635 -204.661,-83.1635 -91.4979,0 -159.662,27.6647 -204.661,83.1635 -44.8336,55.3334 -67.3331,122.167 -67.3331,200.165 0,76.6636 22.4995,143.162 67.3331,199.326 44.999,56.168 113.163,84.3327 204.661,84.3327 91.4979,0 159.662,-28.1647 204.661,-84.3327 44.8336,-56.1641 67.3331,-122.663 67.3331,-199.326z"
+                />
+                <glyph
+                  unicode="t"
+                  horiz-adv-x="332"
+                  d="M9.99977 428.99l0 97.9978 73.9983 0 0 149.997 137.997 0 0 -149.997 85.9981 0 0 -97.9978 -85.9981 0 0 -281.994c0,-21.8342 2.83458,-35.4992 8.33446,-40.9991 5.49988,-5.33453 22.3302,-7.99982 50.4989,-7.99982 4.16526,0 8.66516,0.165351 13.3304,0.499989 4.66919,0.334638 9.33443,0.834627 13.8343,1.49997l0 -103.998 -65.8332 -2.99993c-65.8292,-2.33459 -110.663,9.16515 -134.662,34.1646 -15.665,15.9996 -23.4995,40.6684 -23.4995,73.833l0 327.993 -73.9983 0z"
+                />
+              </font>
+              <style type="text/css">
+                <![CDATA[
+                 @font-face { font-family:"Helvetica";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+                 .fil0 {fill:#FD5948}
+                 .fnt0 {font-weight:bold;font-size:153.59px;font-family:'Helvetica'}
+                ]]>
+              </style>
+            </defs>
+            <g id="Capa_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer" />
+              <text x="-3.97" y="110.58" class="fil0 fnt0">Ableton</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <section class="flex-container__section">
+        <h4>
+            We make  <span class="blue-text">Live</span>, <span class="blue-text">Push</span> and <span class="blue-text">Link</span> — unique software and hardware for music creation and performance. 
+            With these products, our community of users creates amazing things.
+        </h4>
+
+        <p>
+            Ableton was founded in 1999 and released the first version of Live in 2001. 
+            Our products are used by a community of dedicated musicians, sound designers, and artists from across the world.
+        </p>
+      </section>
+
+      <div class="flex-container__collage">
+        <div class="flex-container__collage__lemonade"></div>
+
+        <div class="flex-container__collage__row">
+            <picture>
+                <source srcset="build/img/ableton2.webp" type="image/webp">
+                <img src="build/img/ableton2.webp" alt="ableton2">
+            </picture>
+
+            <picture>
+                <source srcset="build/img/walk.webp" type="image/webp">
+                <img src="build/img/walk.webp" alt="walk">
+            </picture>
+        </div>
+      </div>
+
+      <section class="flex-container__section">
+        <h4>Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.</h4>
+        <p>
+            We feel the same way about making Ableton products. 
+            The driving force behind Ableton is our passion for what we make, and the people we make it for.
+        </p>
+      </section>
+
+
+    </div>
+  </body>
 </html>
