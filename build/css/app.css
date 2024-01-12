@@ -21,7 +21,7 @@ ul {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -406,6 +406,12 @@ template {
 .nav-cont__sub-nav {
   padding: 0.8rem 0;
 }
+@media (min-width: 992px) {
+  .nav-cont__sub-nav ul {
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
+}
 .nav-cont__sub-nav__list {
   padding: 1.8rem;
   font-size: 1.2rem;
@@ -516,6 +522,11 @@ a .highlight {
   flex-direction: column;
   padding: 0 4rem;
 }
+@media (min-width: 992px) {
+  .flex-container {
+    margin: 0 6%;
+  }
+}
 
 .flex-container {
   gap: 4rem;
@@ -547,6 +558,11 @@ a .highlight {
     width: 90%;
   }
 }
+@media (min-width: 992px) {
+  .flex-container {
+    gap: 8rem;
+  }
+}
 
 .flex-container__section h4 {
   font-size: 1.8rem;
@@ -563,6 +579,18 @@ a .highlight {
 }
 .flex-container__section img {
   width: 100%;
+}
+@media (min-width: 992px) {
+  .flex-container__section h4 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 0 20%;
+  }
+  .flex-container__section p {
+    font-size: 1.8rem;
+    margin: 5rem 20%;
+    line-height: 3rem;
+  }
 }
 
 .flex-container__collage {
@@ -609,6 +637,8 @@ a .highlight {
 }
 .flex-container__collage__lavanda {
   background-color: rgb(213, 179, 255);
+  position: absolute;
+  top: 25;
   width: 70vw;
   min-height: 50vw;
   z-index: 1;
@@ -622,4 +652,169 @@ a .highlight {
   font-weight: bold;
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.flex-container__section-jobs {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container__section-jobs img {
+  width: 100%;
+}
+.flex-container__section-jobs__info {
+  background-color: #B1C5FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex-container__section-jobs__info p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+  margin: 5rem 3rem;
+}
+.flex-container__section-jobs__info a {
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  color: #0000ff;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .flex-container__section-jobs {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-container__section-jobs__info p {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  .flex-container__section-jobs__info a {
+    font-size: 1.8rem;
+    margin: 0 0 2rem 3rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-row__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+  }
+  .footer-row__title {
+    font-size: 5rem;
+  }
+}
+
+.footer-col {
+  margin-bottom: 2.5rem;
+  padding: 0;
+}
+.footer-col h5 {
+  font-size: 1.3rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.footer-col p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0;
+}
+.footer-col input[type=text] {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.75rem;
+  margin-top: 0.5rem;
+  width: 65%;
+}
+.footer-col button {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #0000ff;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+.footer-col a {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.footer-col svg {
+  margin-top: 1rem;
+}
+.footer-col select {
+  appearance: none;
+  font-weight: bold;
+  font-size: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  background: transparent;
+  background-color: #eee;
+  cursor: pointer;
+  height: 3rem;
+  border-radius: 0;
+  padding: 0.35rem 0 0.35rem 0.5rem;
+  width: 50%;
+}
+@media (min-width: 992px) {
+  .footer-col {
+    flex-basis: 80rem;
+  }
+  .footer-col h5 {
+    font-size: 2rem;
+  }
+  .footer-col p, .footer-col a {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .footer-col select {
+    display: inline;
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-col__link-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+
+.footer-col__sub-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.footer-col__sub-link__span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .footer-col__sub-link {
+    margin-bottom: 10rem;
+  }
 }
